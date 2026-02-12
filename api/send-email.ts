@@ -76,7 +76,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
                 <p style="font-size: 14px; color: #64748b; line-height: 1.6;">Our team is reviewing your profile to provide the most accurate assessment for your visa application.</p>
               </td>
             </tr>
-            <tr><td style="background: #1e293b; padding: 20px; text-align: center; color: #ffffff; font-size: 11px;">If you have urgent queries, please feel free to reply to this email.</td></tr>
+            <tr><td style="background: #1e293b; padding: 10px; text-align: center; color: #ffffff; font-size: 11px;">If you have urgent queries, please feel free to reply to this email.</td></tr>
             <tr><td style="padding: 25px; background: #f1f5f9; text-align: center; font-size: 12px; color: #64748b;"><strong>Apex Route Consultants</strong><br>LG12A, Big City Plaza, Gulberg 3, Lahore<br>© 2026 Licensed & Insured</td></tr>
           </table>
         </div>`

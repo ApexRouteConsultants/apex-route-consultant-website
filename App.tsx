@@ -12,7 +12,8 @@ import ServiceDetail from './pages/ServiceDetail';
 import CountryDetail from './pages/CountryDetail';
 import Blogs from './pages/Blogs';
 import BlogDetail from './pages/BlogDetail';
-
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsConditions from './pages/TermsConditions';
 const ScrollToTop = () => {
   const { pathname } = useLocation();
   
@@ -45,6 +46,8 @@ const App: React.FC = () => {
             <Route path="/services/:id" element={<ServiceDetail />} />
             <Route path="/country/:code" element={<CountryDetail />} />
             <Route path="*" element={<Navigate to="/" replace />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-conditions" element={<TermsConditions />} />
           </Routes>
         </main>
         <Footer />
