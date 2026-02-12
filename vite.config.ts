@@ -1,7 +1,7 @@
 import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
-import tailwindcss from '@tailwindcss/vite'; // 1. Import the Tailwind plugin
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
@@ -10,9 +10,10 @@ export default defineConfig(({ mode }) => {
     server: {
       port: 3000,
       host: '0.0.0.0',
+      // Proxy is for LOCAL DEV only
       proxy: {
         '/api': {
-          target: 'http://localhost:5000',
+          target: 'http://localhost:3000', // Vercel Dev runs on 3000 by default
           changeOrigin: true,
           secure: false,
         },
@@ -20,7 +21,7 @@ export default defineConfig(({ mode }) => {
     },
     plugins: [
       react(), 
-      tailwindcss() // 2. Add Tailwind to the plugins array
+      tailwindcss()
     ],
     define: {
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
@@ -30,6 +31,10 @@ export default defineConfig(({ mode }) => {
       alias: {
         '@': path.resolve(__dirname, '.'),
       }
+    },
+    // Ensure build output goes to 'dist' (Vercel's default)
+    build: {
+      outDir: 'dist',
     }
   };
 });

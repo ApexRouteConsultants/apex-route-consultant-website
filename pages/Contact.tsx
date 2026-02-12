@@ -17,6 +17,7 @@ const Contact: React.FC = () => {
     } else if (!/^\S+@\S+\.\S+$/.test(data.email)) {
       errors.email = "Please enter a valid email address";
     }
+    if (!data.phone) errors.phone = "Phone number is required";
     if (!data.country) errors.country = "Please select a country";
     if (!data.details || data.details.length < 10) {
       errors.details = "Please provide more details (min. 10 characters)";
@@ -35,6 +36,7 @@ const Contact: React.FC = () => {
       firstName: formData.get('firstName') as string,
       lastName: formData.get('lastName') as string,
       email: formData.get('email') as string,
+      phone: formData.get('phone') as string,
       visaCategory: formData.get('visaCategory') as string,
       country: formData.get('country') as string,
       details: formData.get('details') as string,
@@ -172,16 +174,28 @@ const Contact: React.FC = () => {
                   </div>
                 </div>
 
-                <div>
-                  <label className="block text-xs uppercase tracking-wider text-navy-900 font-bold mb-3 ml-4">Email Address</label>
-                  <input
-                    name="email"
-                    type="email"
-                    className={`w-full bg-neutral-50 border-2 ${fieldErrors.email ? 'border-red-400' : 'border-neutral-200'} px-6 py-4 rounded-full text-navy-900 font-medium focus:outline-none focus:border-gold-500 focus:bg-white transition-all duration-300`}
-                    placeholder="name@example.com"
-                  />
-                  {fieldErrors.email && <span className="text-red-500 text-xs ml-4">{fieldErrors.email}</span>}
-                </div>
+                <div className="grid md:grid-cols-2 gap-8">
+              <div className="group">
+                <label className="block text-xs uppercase tracking-wider text-navy-900 font-bold mb-3 ml-4">Email Address</label>
+                <input
+                  name="email"
+                  type="email"
+                  className={`w-full bg-neutral-50 border-2 ${fieldErrors.email ? 'border-red-400' : 'border-neutral-200'} px-6 py-4 rounded-full text-navy-900 font-medium focus:outline-none focus:border-gold-500 transition-all`}
+                  placeholder="name@example.com"
+                  required
+                />
+              </div>
+              <div className="group">
+                <label className="block text-xs uppercase tracking-wider text-navy-900 font-bold mb-3 ml-4">Phone Number</label>
+                <input
+                  name="phone"
+                  type="tel"
+                  className="w-full bg-neutral-50 border-2 border-neutral-200 px-6 py-4 rounded-full text-navy-900 font-medium focus:outline-none focus:border-gold-500 transition-all"
+                  placeholder="+92 300 1234567"
+                  required
+                />
+              </div>
+            </div>
 
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>

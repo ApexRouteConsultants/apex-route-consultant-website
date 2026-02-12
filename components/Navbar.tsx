@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-navy-900 shadow-xl py-2' : 'bg-navy-900/90 backdrop-blur-sm py-4'
+      className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-navy-700 shadow-xl py-2' : 'bg-navy-900/90 backdrop-blur-sm py-4'
         }`}
     >
       <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center">
