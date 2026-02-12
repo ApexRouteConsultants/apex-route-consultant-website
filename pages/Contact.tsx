@@ -277,9 +277,9 @@ const Contact: React.FC = () => {
                     />
                     <label htmlFor="agreed" className="text-sm text-neutral-600 leading-relaxed cursor-pointer">
                       I agree to the 
-                      <Link to="/TermsConditions" className="text-navy-900 font-bold hover:text-gold-500 mx-1 underline">Terms & Conditions</Link> 
+                      <Link to="/terms-conditions" className="text-navy-900 font-bold hover:text-gold-500 mx-1 underline">Terms & Conditions</Link> 
                       and 
-                      <Link to="/PrivacyPolicy" className="text-navy-900 font-bold hover:text-gold-500 mx-1 underline">Privacy Policy</Link>.
+                      <Link to="/privacy-policy" className="text-navy-900 font-bold hover:text-gold-500 mx-1 underline">Privacy Policy</Link>.
                     </label>
                   </div>
                   {fieldErrors.agreed && <p className="text-red-500 text-xs mb-4 ml-8">{fieldErrors.agreed}</p>}
