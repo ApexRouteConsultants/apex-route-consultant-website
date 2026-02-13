@@ -45,9 +45,9 @@ const App: React.FC = () => {
             <Route path="/blogs/:id" element={<BlogDetail />} />
             <Route path="/services/:id" element={<ServiceDetail />} />
             <Route path="/country/:code" element={<CountryDetail />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-conditions" element={<TermsConditions />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
         <Footer />

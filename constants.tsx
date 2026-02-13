@@ -94,7 +94,7 @@ export const COUNTRIES: Country[] = [
   {
     name: 'United Kingdom',
     code: 'gb',
-    heroImage: '/images/uk.avif',
+    heroImage: '/images/uk.webp',
     description: 'The UK offers a points-based immigration system designed to attract skilled talent and students. From the prestigious Tier 4 Student route to the Skilled Worker visa, the UK remains a top global destination.',
     visaCategories: [
       { title: 'Skilled Worker Visa', description: 'For individuals with a job offer from a UK-licensed sponsor.' },
@@ -110,7 +110,7 @@ export const COUNTRIES: Country[] = [
   {
     name: 'Canada',
     code: 'ca',
-    heroImage: '/images/canada.avif',
+    heroImage: '/images/canada.webp',
     description: 'Canada is known for its welcoming immigration policies and high quality of life. The Express Entry system and Provincial Nominee Programs (PNP) offer clear pathways to Permanent Residency.',
     visaCategories: [
       { title: 'Express Entry (PR)', description: 'Fast-track system for skilled workers to settle in Canada permanently.' },
@@ -126,7 +126,7 @@ export const COUNTRIES: Country[] = [
   {
     name: 'United States',
     code: 'us',
-    heroImage: '/images/usa.jpg',
+    heroImage: '/images/usa.webp',
     description: 'The US immigration system is complex but rewarding. Whether for higher education (F1), specialty occupations (H1-B), or business expansion (L1/E2), proper legal guidance is essential.',
     visaCategories: [
       { title: 'F-1 Student Visa', description: 'For academic students enrolled in colleges, universities, or language programs.' },
@@ -142,7 +142,7 @@ export const COUNTRIES: Country[] = [
   {
     name: 'Australia',
     code: 'au',
-    heroImage: '/images/australia.jpg',
+    heroImage: '/images/australia.webp',
     description: 'Australia offers a lifestyle-focused migration program. The General Skilled Migration (GSM) program uses a points test to select immigrants who will contribute to the economy.',
     visaCategories: [
       { title: 'Subclass 500 (Student)', description: 'Allows you to stay in Australia to study full-time.' },
@@ -158,7 +158,7 @@ export const COUNTRIES: Country[] = [
   {
     name: 'Germany',
     code: 'de',
-    heroImage: '/images/germany.jpg',
+    heroImage: '/images/germany-home.webp',
     description: 'As Europe\'s economic engine, Germany attracts skilled professionals and students. The new Opportunity Card and streamlined Blue Card rules make it easier for qualified talent to enter.',
     visaCategories: [
       { title: 'Student Visa', description: 'For university studies or preparatory measures (Studienkolleg).' },
@@ -174,7 +174,7 @@ export const COUNTRIES: Country[] = [
   {
     name: 'New Zealand',
     code: 'nz',
-    heroImage: '/images/new zeland.jpg',
+    heroImage: '/images/new-zeland.webp',
     description: 'New Zealand offers a high quality of life and a welcoming environment. The immigration system favors skilled workers, investors, and those looking to study in world-class institutions.',
     visaCategories: [
       { title: 'Skilled Migrant Category', description: 'Points-based visa for people with skills required in New Zealand.' },
@@ -190,7 +190,7 @@ export const COUNTRIES: Country[] = [
   {
     name: 'France',
     code: 'fr',
-    heroImage: '/images/france.avif',
+    heroImage: '/images/france.webp',
     description: 'France remains one of the most popular destinations for students and professionals. The "Passeport Talent" and student visas offer clear routes for non-EU nationals.',
     visaCategories: [
       { title: 'Long Stay Visitor', description: 'For stays over 90 days without engaging in professional activity.' },
@@ -206,7 +206,7 @@ export const COUNTRIES: Country[] = [
   {
     name: 'Italy',
     code: 'it',
-    heroImage: '/images/italy.avif',
+    heroImage: '/images/italy.webp',
     description: 'Italy offers various pathways for residency, including the popular Elective Residence Visa for those with passive income, and student visas for its historic universities.',
     visaCategories: [
       { title: 'Elective Residence', description: 'For individuals with high passive income wishing to reside in Italy.' },
@@ -247,7 +247,7 @@ export const BLOG_POSTS: BlogPost[] = [
     role: 'Senior UK Consultant',
     date: 'March 15, 2024',
     category: 'United Kingdom',
-    imageUrl: '/images/uk2.avif',
+    imageUrl: '/images/uk2.webp',
     readTime: '6 min read',
     tags: ['UK Immigration', 'Work Visa', 'Policy Update']
   },
@@ -276,7 +276,7 @@ export const BLOG_POSTS: BlogPost[] = [
     role: 'Regulated Canadian Immigration Consultant',
     date: 'March 10, 2024',
     category: 'Canada',
-    imageUrl: '/images/canada.avif',
+    imageUrl: '/images/canada.webp',
     readTime: '5 min read',
     tags: ['Express Entry', 'Canada PR', 'STEM']
   },
@@ -298,7 +298,7 @@ export const BLOG_POSTS: BlogPost[] = [
     role: 'US Immigration Attorney',
     date: 'February 28, 2024',
     category: 'United States',
-    imageUrl: '/images/usa2.jpg',
+    imageUrl: '/images/usa2.webp',
     readTime: '7 min read',
     tags: ['H-1B', 'US Visa', 'Work Permit']
   },
@@ -320,7 +320,7 @@ export const BLOG_POSTS: BlogPost[] = [
     role: 'MARA Registered Agent',
     date: 'February 15, 2024',
     category: 'Australia',
-    imageUrl: '/images/australia2.avif',
+    imageUrl: '/images/australia2.webp',
     readTime: '4 min read',
     tags: ['Australia', 'Investment Visa', 'Migration Strategy']
   },
@@ -348,7 +348,7 @@ export const BLOG_POSTS: BlogPost[] = [
     role: 'EU Mobility Expert',
     date: 'March 01, 2024',
     category: 'Germany',
-    imageUrl: '/images/germany.jpg',
+    imageUrl: '/images/germany.webp',
     readTime: '5 min read',
     tags: ['Germany', 'Job Seeker', 'EU Visa']
   },
@@ -374,7 +374,7 @@ export const BLOG_POSTS: BlogPost[] = [
     role: 'French Immigration Specialist',
     date: 'February 20, 2024',
     category: 'France',
-    imageUrl: '/images/france.avif',
+    imageUrl: '/images/france.webp',
     readTime: '4 min read',
     tags: ['French Tech', 'Talent Passport', 'Expat']
   },
@@ -396,7 +396,7 @@ export const BLOG_POSTS: BlogPost[] = [
     role: 'Legal Consultant - Italy',
     date: 'March 18, 2024',
     category: 'Italy',
-    imageUrl: '/images/italy2.jpg',
+    imageUrl: '/images/italy2.webp',
     readTime: '5 min read',
     tags: ['Digital Nomad', 'Italy', 'Remote Work']
   },
@@ -421,7 +421,7 @@ export const BLOG_POSTS: BlogPost[] = [
     role: 'LIA (Licensed Immigration Adviser)',
     date: 'January 25, 2024',
     category: 'New Zealand',
-    imageUrl: '/images/new zeland.jpg',
+    imageUrl: '/images/new-zeland.webp',
     readTime: '6 min read',
     tags: ['Green List', 'New Zealand', 'Residency']
   }

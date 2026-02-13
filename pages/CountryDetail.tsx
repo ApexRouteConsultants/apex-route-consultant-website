@@ -15,7 +15,7 @@ const CountryDetail: React.FC = () => {
     <div className="bg-neutral-50 min-h-screen">
       
       {/* HERO SECTION */}
-      <div className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden">
+      <div className="relative h-[60vh] md:h-[77vh] w-full overflow-hidden">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -41,8 +41,8 @@ const CountryDetail: React.FC = () => {
                     />
                  </div>
                  <div className="mb-2">
-                    <span className="text-gold-400 font-bold uppercase tracking-[0.2em] text-sm block mb-2">Immigration Guide</span>
-                    <h1 className="text-5xl md:text-7xl font-serif text-white">{country.name}</h1>
+                    <span className="text-gold-400 font-bold uppercase tracking-[0.2em] text-sm block ">Immigration Guide</span>
+                    <h1 className="text-3xl md:text-6xl font-serif text-white">{country.name}</h1>
                  </div>
               </div>
            </div>

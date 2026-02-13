@@ -21,10 +21,12 @@ const Navbar: React.FC = () => {
   }, [location]);
 
   return (
-    <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-navy-900 shadow-xl py-2' : 'bg-navy-900/90 backdrop-blur-sm py-4'
-        }`}
-    >
+    // Navbar.tsx return:
+          <nav
+            className={`fixed w-full z-50 transition-all duration-500 ${
+              scrolled ? 'bg-navy-900/95 shadow-2xl py-2 backdrop-blur-md' : 'bg-navy-900 py-4'
+            }`}
+          >
       <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center">
         {/* Logo Area - Image Based */}
         <Link
@@ -32,11 +34,11 @@ const Navbar: React.FC = () => {
           className="flex items-center gap-3 group animate-fade-in shrink-0"
         >
           {/* Logo */}
-          <div className="flex items-center justify-center rounded-full bg-navy-900">
+          <div className="flex items-center justify-center rounded-full">
             <img
-              src="/images/logo.jpeg"
+              src="/images/logo-bg.png"
               alt="Apex Route Logo"
-              className="h-12 w-12 rounded-full object-cover shadow-sm transition-transform duration-300 group-hover:scale-105 bg-navy-900"
+              className="h-12 w-12 rounded-full object-cover shadow-sm transition-transform duration-300 group-hover:scale-105 "
             />
           </div>
 
