@@ -78,7 +78,7 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center divide-x divide-navy-700/50">
             <div>
-              <p className="text-4xl font-serif text-gold-500 mb-2">5,000+</p>
+              <p className="text-4xl font-serif text-gold-500 mb-2">1,000+</p>
               <p className="text-white/60 text-[10px] uppercase tracking-widest font-bold">Visa Approvals</p>
             </div>
             <div>
@@ -86,7 +86,7 @@ const Home: React.FC = () => {
               <p className="text-white/60 text-[10px] uppercase tracking-widest font-bold">Success Rate</p>
             </div>
             <div>
-              <p className="text-4xl font-serif text-gold-500 mb-2">12+</p>
+              <p className="text-4xl font-serif text-gold-500 mb-2">10+</p>
               <p className="text-white/60 text-[10px] uppercase tracking-widest font-bold">Years Experience</p>
             </div>
             <div>

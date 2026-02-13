@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           {/* Brand Column */}
           <div className="col-span-1">
             <div className="flex flex-row mb-6">
-              <a href="/"><img className='w-40' src="/images/logo-bg.png" alt="apex-route-logo" /></a>
+              <a href="/"><img className='w-12 h-12 m-4' src="/images/logo-circle.png" alt="apex-route-logo" /></a>
               <p className="text-white font-serif tracking-wider text-lg pt-3">APEX ROUTE <br /><span className='text-gold-500 text-m tracking-[0.2em] uppercase'>Consultants</span></p>
             </div>
             <p className="text-sm leading-relaxed mb-6 text-neutral-500">

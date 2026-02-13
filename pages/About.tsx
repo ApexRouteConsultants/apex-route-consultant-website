@@ -34,8 +34,8 @@ const About: React.FC = () => {
                { icon: Users, title: "Client Confidentiality", desc: "Your personal data and documents are handled with the highest level of security." }
              ].map((item, idx) => (
                 <div key={idx} className="bg-neutral-50 p-8 rounded-[2rem] hover:bg-white hover:shadow-xl transition-all duration-300 border border-neutral-100 text-center group">
-                    <div className="w-16 h-16 mx-auto bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-300">
-                      <item.icon className="w-8 h-8 text-navy-800" />
+                    <div className="w-16 h-16 mx-auto bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:bg-navy-900 transition-colors duration-500 group-hover:scale-110 transition-transform duration-300">
+                      <item.icon className="w-8 h-8 text-navy-800 group-hover:text-gold-500 transition-colors duration-500 " />
                     </div>
                     <h3 className="text-xl font-medium text-navy-900 mb-3">{item.title}</h3>
                     <p className="text-neutral-500 leading-relaxed">{item.desc}</p>
