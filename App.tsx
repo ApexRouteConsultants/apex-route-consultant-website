@@ -14,6 +14,7 @@ import Blogs from './pages/Blogs';
 import BlogDetail from './pages/BlogDetail';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
+import WhatsAppButton from './components/WhatsAppButton';
 const ScrollToTop = () => {
   const { pathname } = useLocation();
   
@@ -50,6 +51,7 @@ const App: React.FC = () => {
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
+        <WhatsAppButton />
         <Footer />
       </div>
     </Router>
