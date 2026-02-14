@@ -1,0 +1,10 @@
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Prevent bots from wasting time on your internal API
+Disallow: /api/
+Disallow: /metadata.json
+
+# Point to your sitemap
+Sitemap: https://apexrouteconsultants.com/sitemap.xml
