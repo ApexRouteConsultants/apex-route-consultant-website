@@ -40,13 +40,18 @@ const Footer: React.FC = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-white font-medium uppercase tracking-widest text-xs mb-6">Office</h4>
-            <address className="not-italic text-sm space-y-3">
+            <h4 className="text-white font-medium uppercase tracking-widest text-xs mb-6">Contact</h4>
+            <div className="not-italic text-sm space-y-3">
               <p><i className="fa fa-home mr-2"></i>Office No: LG12A, Big City Plaza</p>
               <p><i className="fas fa-map-marker-alt mr-2"></i>Liberty Roundabout, Gulberg 3, Lahore</p>
               <p><a href="mailto:info@apexrouteconsultants.com" target='_blank' rel='noreferrer'><i className="fas fa-envelope mr-2"></i>info@apexrouteconsultants.com</a></p>
               <p><a href="tel:+923398410100" target='_blank' rel='noreferrer'><i className="fas fa-phone mr-2"></i>+92 339 8410100</a></p>
-            </address>
+            </div>
+            <div className="flex mt-3 gap-5 text-xl">
+              <a href="https://www.facebook.com/share/1HeFACpU98/?mibextid=wwXIfr" target='_blank' rel='noreferrer'><i className="fab fa-facebook-f mr-2 hover:text-gold-500 transition-colors"></i></a>
+              <a href="https://www.instagram.com/apexrouteconsultants?igsh=d2hyNHc2MDF5YzQ1&utm_source=qr" target='_blank' rel='noreferrer'><i className="fab fa-instagram mr-2 hover:text-gold-500 transition-colors"></i></a>
+              <a href="https://www.tiktok.com/@anassandhu777?_r=1&_d=f0e3gib0kmd00i&sec_uid=MS4wLjABAAAAqvmTV5fzha5TPaAbbfNJIOcvyKG8jWrZsFXQg0AceI9qMwU3oyKnS5yChttggrSg&share_author_id=7580439561801958422&sharer_language=en&source=h5_m&u_code=f0kk552ll22k36&item_author_type=1&utm_source=copy&tt_from=copy&enable_checksum=1&utm_medium=ios&share_link_id=B307C4EA-A84B-47FE-BD25-1B30F972D239&user_id=7580439561801958422&sec_user_id=MS4wLjABAAAAqvmTV5fzha5TPaAbbfNJIOcvyKG8jWrZsFXQg0AceI9qMwU3oyKnS5yChttggrSg&social_share_type=4&ug_btm=b8727,b0&utm_campaign=client_share&share_app_id=1233" target='_blank' rel='noreferrer'><i className="fab fa-tiktok mr-2 hover:text-gold-500 transition-colors"></i></a>
+            </div>
           </div>
 
         </div>
