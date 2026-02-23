@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Loader2, AlertCircle } from 'lucide-react';
 import { Link } from 'react-router-dom'; // Using Router Link for navigation
@@ -306,3 +307,5 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
+=======
+>>>>>>> b63bfdb3fa876db722406d9959507b08bab0eb14
