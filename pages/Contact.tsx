@@ -171,7 +171,7 @@ const Contact: React.FC = () => {
                       value={formData.firstName}
                       onChange={handleChange}
                       className={`w-full bg-neutral-50 border-2 ${fieldErrors.firstName ? 'border-red-400' : 'border-neutral-200'} px-6 py-4 rounded-full text-navy-900 font-medium focus:outline-none focus:border-gold-500 transition-all`}
-                      placeholder="Jonathan"
+                      placeholder="First Name"
                     />
                     {fieldErrors.firstName && <span className="text-red-500 text-xs ml-4">{fieldErrors.firstName}</span>}
                   </div>
@@ -183,7 +183,7 @@ const Contact: React.FC = () => {
                       value={formData.lastName}
                       onChange={handleChange}
                       className={`w-full bg-neutral-50 border-2 ${fieldErrors.lastName ? 'border-red-400' : 'border-neutral-200'} px-6 py-4 rounded-full text-navy-900 font-medium focus:outline-none focus:border-gold-500 transition-all`}
-                      placeholder="Doe"
+                      placeholder="Last Name"
                     />
                     {fieldErrors.lastName && <span className="text-red-500 text-xs ml-4">{fieldErrors.lastName}</span>}
                   </div>
